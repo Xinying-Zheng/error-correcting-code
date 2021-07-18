@@ -16,6 +16,7 @@ with period 63.
 signaling, the relationship between Eb/N0 and σ2 is given by
 * Use the following segment of pseudo code to generate normal random variables of mean zero and variance σ2. The procedure normal outputs two independent normal random variables, n1 and n2, and Ranq1 is a function which generates a random variable
 uniformly distributed in the interval (0, 1).
+
 '''
 unsigned long long SEED;
 // SEED must be an unsigned integer smaller than 4101842887655102017.
@@ -77,6 +78,7 @@ RANV
 return RANV * 2685821657736338717LL * 5.42101086242752217E-20;
 }
 '''
+
 *  To get the output of the BSC, take the sign of the output of the AWGN channel and map +1’s to 0’s and d 1’s to 1’s.
 *  In your decoder, truncate the survivors to length 32 and output the oldest bit on the
 survivor with the best metric. To decode N bits, generate N + 31 bits in (1). Finally
