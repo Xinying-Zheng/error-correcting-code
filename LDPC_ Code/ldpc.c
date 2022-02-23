@@ -54,7 +54,7 @@ double sign(double x)
 	else	return -1.0;
 }
 
-int main (int argc,char *argv[])
+int main (int argc,char *argv[]) // xinYing:we can also define the value in the below equation...because the io stream is not always work
 {
 	int SNR_top = atoi(argv[1]);
 	int inter_num = atoi(argv[2]);
